@@ -89,6 +89,7 @@ public class EncapsulateTheData {
 	}
 	
 	public static void main(String[] args) {
+	
 		assertEquals(64, 64);
 	}
 }
