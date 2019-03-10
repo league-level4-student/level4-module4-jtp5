@@ -23,12 +23,13 @@ public class Hospital {
 	}
 
 	public void assignPatientsToDoctors() throws DoctorFullException {
+		int d = 0;
 		for (int i = 0; i < getPatients().size(); i++) {
-			int d = i;
 			if (d >= getDoctors().size()) {
 				d = 0;
 			}
 			getDoctors().get(d).assignPatient(getPatients().get(i));
+			d++;
 		}
 	}
 
